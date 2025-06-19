@@ -6,7 +6,7 @@ export function App() {
   const [index, setIndex] = useState(0)
 
   const dtata = async () => {
-    const response = await fetch('http://localhost:4000/quotes')
+    const response = await fetch('https://02-01-b-98151548779877511146s-projects.vercel.app/quotes')
     if (response.ok) {
       const data = await response.json()
       setCount(data)
