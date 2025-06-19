@@ -34,7 +34,7 @@ export function App() {
             <div class="flex justify-center gap-4 mt-6">
               <button
                 class="bg-white/20 hover:bg-white/40 text-black font-semibold py-2 px-6 rounded-full transition duration-200"
-                onClick={() => setIndex((index - 1 + count.length) % count.length)}
+                onClick={() => setIndex((Math.floor(Math.random() * data.length) - 1 + count.length) % count.length)}
               >
                 ⬅ Previous
               </button>
